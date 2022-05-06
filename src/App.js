@@ -1,12 +1,21 @@
 /** @format */
 
 import "./App.css"
-import QrCodeGenerating from "./QrCodeGenerating"
+import TdoList from "./TdoList"
+import UserList from "./UserList"
 
 function App() {
 	return (
-		<div>
-			<QrCodeGenerating text='Worn oFF Keys' />
+		<div className='App'>
+			<h2>Higher Order Component</h2>
+			<div className='section'>
+				<div>
+					<UserList />
+				</div>
+				<div>
+					<TdoList />
+				</div>
+			</div>
 		</div>
 	)
 }
