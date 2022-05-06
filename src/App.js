@@ -2,7 +2,7 @@
 
 import "./App.css"
 import TdoList from "./TdoList"
-import UserList from "./UserList"
+import SearchUsers from "./UserList"
 
 function App() {
 	return (
@@ -10,11 +10,9 @@ function App() {
 			<h2>Higher Order Component</h2>
 			<div className='section'>
 				<div>
-					<UserList />
+					<SearchUsers />
 				</div>
-				<div>
-					<TdoList />
-				</div>
+				<div>{<TdoList />}</div>
 			</div>
 		</div>
 	)
